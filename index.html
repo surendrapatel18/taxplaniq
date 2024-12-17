@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TexPlanIQ</title>
+    <link href="image/fevicon.jpg" rel="icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link href="media-query.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper wrapper-menu">
+        <div class="container" style="position: relative;">
+            <!-- Desktop Menu -->
+            <header class="desktop-header">
+                <div class="logo">
+                    <a href="/">
+                        <img src="image/TaxplanIQ-logo.svg" alt="Logo" />
+                    </a>
+                </div>
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="#Products">Products</a></li>
+                        <li><a href="#Resources">Resources</a></li>
+                        <li><a href="#Pricing">Pricing</a></li>
+                        <li><a href="#AboutUs">About Us</a></li>
+                    </ul>
+                </nav>
+                <div class="button-group">
+                    <a href="#" class="btn btn-primary">Start Free Trial</a>
+                </div>
+            </header>
+
+            <!-- Mobile Menu -->
+            <header class="mobile-header">
+                <div class="logo">
+                    <a href="/">
+                        <img src="image/TaxplanIQ-logo.svg" alt="Logo" />
+                    </a>
+                </div>
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars toggle-open"></i>
+                    <i class="fa-solid fa-x toggle-close hidden"></i>
+                </div>
+            </header>
+
+            <!-- Mobile Menu Content -->
+            <div class="mobile-menu hidden">
+                <nav class="mobile-nav-links">
+                    <ul>
+                        <li><a href="#Products">Products</a></li>
+                        <li><a href="#Resources">Resources</a></li>
+                        <li><a href="#Pricing">Pricing</a></li>
+                        <li><a href="#AboutUs">About Us</a></li>
+                    </ul>
+                </nav>
+                <div class="button-mobile">
+                    <a href="#" class="btn btn-primary">Start Free Trial</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Banner Section Start -->
+
+    <section class="banner-section">
+
+        <div class="container">
+            <div class="banner-row">
+                <!-- Left Content -->
+                <div class="banner-content banner-heading">
+                    <h1>
+                        Efficiency . Value . Success.
+                        <span class="highlight-text">Meet TaxPlanIQ.</span>
+                    </h1>
+                    <h1>
+                        Your tax advisory operations platform.
+                    </h1>
+                    <p class="banner-description">
+                        The intelligent way to create tax plans, manage engagements, facilitate live collaboration, and
+                        visualize ROI — all on one platform.
+                    </p>
+                    <!-- Buttons -->
+                    <div class="button-group">
+                        <a href="#" class="btn btn-primary">Start Free Trial</a>
+                        <a href="#" class="btn btn-secondary">Get a Demo</a>
+                    </div>
+                    <!-- Text Line -->
+                    <p class="savings-text">
+                        <span>$250M</span> in tax savings | averaging
+                        <span>$16,532</span> per client
+                    </p>
+                </div>
+
+                <!-- Right Content -->
+                <div class="banner-image-container"
+                    onclick="toggleVideo('https://www.youtube.com/embed/Mt3FZXf7JDE?autoplay=1')">
+                    <div class="banner-ellipse">
+                        <img src="image/Mask-cricle.png" alt="Ellipse" class="img-responsive">
+                    </div>
+                    <div class="banner-shape-line">
+                        <img src="image/shape-line.png" alt="Shape Line" class="img-responsive">
+                    </div>
+                    <div class="banner-data-table">
+                        <img src="image/Data-Table.png" alt="Data Table" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal video-hidden" id="videoModal">
+        <div class="modal-content">
+            <iframe width="100%" height="100%" src="" frameborder="0" allow="autoplay"></iframe>
+            <button class="close-btn" onclick="closeVideo()">✕</button>
+        </div>
+    </div>
+
+
+
+    <!-- Brand-Logo-Section-START -->
+    <div class="logo-section">
+        <div class="container">
+            <div class="logo-row">
+                <h4 class="logo-title">
+                    Preferred choice of Elite Accountants
+                </h4>
+                <div class="col-img">
+                    <img src="image/taxesbythesea.svg" alt="TAXES SEA" />
+                </div>
+                <div class="col-img">
+                    <img src="image/Hall-Accounting-Logo.svg" alt="Hall Accounting" />
+                </div>
+                <div class="col-img">
+                    <img src="image/Anchor-cpa.svg" alt="Anchor CPA" />
+                </div>
+                <div class="col-img">
+                    <img src="image/starlitetaxsolutionscolor.svg" alt="Starlite Solutions" />
+                </div>
+                <div class="col-img">
+                    <img src="image/Anomaly CPA.svg" alt="Anomaly CPA" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Count Section START -->
+
+    <!-- Count Section START -->
+    <div class="count-section">
+        <div class="container">
+            <div class="count-row">
+                <div class="count-text-col count-title" onpointerover="startCounting(this)" data-value="250">
+                    <h3>$<span class="count-number">250</span>M</h3>
+                    <p>in Tax Savings</p>
+                </div>
+                <div class="count-text-col count-title" onmouseover="startCounting(this)" data-value="16532">
+                    <h3>$<span class="count-number">16,532</span></h3>
+                    <p>Average Tax Savings Per Client</p>
+                </div>
+                <div class="count-text-col count-title" onmouseover="startCounting(this)" data-value="25">
+                    <h3><span class="count-number">25</span>K</h3>
+                    <p>Tax payers rely on TaxPlanIQ for their tax savings</p>
+                </div>
+                <div class="count-text-col count-title" onmouseover="startCounting(this)" data-value="75">
+                    <h3><span class="count-number">75</span>%</h3>
+                    <p>Time saved monthly (on average)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Greg O'Brien Section START -->
+    <div class="testimonial-section">
+        <div class="container">
+            <div class="testimonial-row">
+                <!-- Image Column -->
+                <div class="testimonial-image-wrapper"
+                    onclick="toggleVideo('https://www.youtube.com/embed/-ObGIMZ04aI?si=baPY8xDjDiXpnjW5')">
+                    <div class="testimonial-image">
+                        <img src="image/greg-o-brein-men.png" alt="Greg O'Brien" />
+                    </div>
+                    <div class="play-button">
+                        <img src="image/video-play-icon.svg" alt="Play Icon" />
+                    </div>
+                </div>
+
+                <!-- Modal for Video -->
+                <div class="video-modal video-hidden" id="videoModal">
+                    <div class="modal-content">
+                        <iframe width="100%" height="100%" src="" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <button class="modal-close-btn" onclick="closeVideo()">&times;</button>
+                    </div>
+                </div>
+
+                <!-- Content Column -->
+                <div class="testimonial-content title-paragrap">
+                    <div class="rating-stars">
+                        <img src="image/Star-icon.svg" alt="Star" class="star-icon" />
+                        <img src="image/Star-icon.svg" alt="Star" class="star-icon" />
+                        <img src="image/Star-icon.svg" alt="Star" class="star-icon" />
+                        <img src="image/Star-icon.svg" alt="Star" class="star-icon" />
+                        <img src="image/Star-icon.svg" alt="Star" class="star-icon" />
+                    </div>
+                    <p>
+                        TaxPlanIQ systematizes, is scalable, and teaches your staff and allowed me to focus on
+                        value-added activities. It is an extension of your firm. For example, we had a high-net-worth
+                        real estate investor, added him into TaxPlanIQ, and found $75,000 to $100,000 worth of savings
+                        available to him and included our fee of 20%. He quickly accepted it!
+                    </p>
+                    <div class="author">Greg O'Brien</div>
+                    <div class="author-position">CPA CEO, Anomaly CPA</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Features-Section-START -->
+
+    <div class="feature-section">
+        <div class="container">
+            <div class="text-center feature-description subheading">
+                <div class="heading">
+                    <h5>Features</h5>
+                </div>
+                <h4>
+                    Transform Your Tax Advisory Journey with TaxPlanIQ.
+                </h4>
+                <p>
+                    Redefine success in tax planning and advisory with TaxPlanIQ. Go beyond mere tax projections and
+                    dive
+                    into a comprehensive, value-driven approach that benefits both you and your clients. Our platform
+                    manages the entire tax advisory engagement from start to finish, illuminating the profound impact of
+                    a
+                    well-structured tax plan on financial growth.
+                </p>
+            </div>
+
+            <div class="feature-row">
+                <div class="box-contain">
+                    <div class="icon-col h5">
+                        <img src="image/Advisory-engagement.svg" alt="Advisory engagement" />
+                        <h5>
+                            Advisory engagement
+                        </h5>
+                    </div>
+
+                    <div class="disc">
+                        <ul>
+                            <li>Save time with automated proposal to implementation processes</li>
+                            <li>Streamline your entire advisory engagement, from proposal creation to implementation.
+                                Easily
+                                sync with your billing and practice management software.</li>
+                        </ul>
+                    </div>
+
+                    <div class="arrow-right">
+                        <a href="#">
+                            <img src="image/right-arrow.svg" alt="Right Arrow" />
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="box-contain">
+                    <div class="icon-col h5">
+                        <img src="image/ROI-visualization.svg" alt="ROI Visualization" />
+                        <h5>
+                            ROI Visualization
+                        </h5>
+                    </div>
+
+                    <div class="disc">
+                        <ul>
+                            <li>Showcase the value with vivid ROI Visualization</li>
+                            <li>Demonstrate the monetary benefits of your tax planning strategies, helping clients and
+                                team members visualize the ROI and value provided.</li>
+                        </ul>
+                    </div>
+
+                    <div class="arrow-right">
+                        <a href="#">
+                            <img src="image/right-arrow.svg" alt="Right Arrow" />
+                        </a>
+
+                    </div>
+                </div>
+                <div class="box-contain">
+                    <div class="icon-col h5">
+                        <img src="image/Strategy-and-templates.svg" alt="Strategy and Templates" />
+                        <h5>
+                            Strategy and Templates
+                        </h5>
+                    </div>
+
+                    <div class="disc">
+                        <ul>
+                            <li>Manage proposals, live collaboration, and ROI visualization on one platform
+                            </li>
+                            <li> Confidently automate your tax advisory operations with simple integration into your
+                                tech stack. One login, a centralized task list, and hundreds of resources.</li>
+                        </ul>
+                    </div>
+
+                    <div class="arrow-right">
+                        <a href="#">
+                            <img src="image/right-arrow.svg" alt="Right Arrow" />
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="feature-row">
+                <div class="box-contain">
+                    <div class="icon-col h5">
+                        <img src="image/Education-Resources.svg" alt="Education & Resources" />
+                        <h5>
+                            Education & Resources
+                        </h5>
+                    </div>
+
+                    <div class="disc">
+                        <ul>
+                            <li>Access our wealth of guides, templates, and Webinars with CPE designed to enhance
+                                proficiency, fostering continuous learning and growth.</li>
+                        </ul>
+                    </div>
+
+                    <div class="arrow-right">
+                        <a href="#">
+                            <img src="image/right-arrow.svg" alt="Right Arrow" />
+                        </a>
+
+                    </div>
+                </div>
+                <div class="box-contain">
+                    <div class="icon-col h5">
+                        <img src="image/Live-Collaboration.svg" alt="Live Collaboration" />
+                        <h5>
+                            Live Collaboration
+                        </h5>
+                    </div>
+
+                    <div class="disc">
+                        <ul>
+                            <li>Enhance cooperative efforts with live collaboration features</li>
+                            <li>
+                                Access a shared workspace for live collaboration on tax plans, fostering a cooperative
+                                environment among team members and clients.</li>
+                        </ul>
+                    </div>
+
+                    <div class="arrow-right">
+                        <a href="#">
+                            <img src="image/right-arrow.svg" alt="Right Arrow" />
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="box-contain">
+                    <div class="icon-col h5">
+                        <img src="image/Community-Coaching.svg" alt="Community & Coaching" />
+                        <h5>
+                            Community & Coaching
+                        </h5>
+                    </div>
+
+                    <div class="disc">
+                        <ul>
+                            <li>Enhance your clients' tax advisory experience and grow your firm</li>
+                            <li>
+                                Automate tedious tasks, enable value pricing, and expand opportunities for your firm by
+                                offering advanced tax advisory services with our CCTA certification.</li>
+                        </ul>
+                    </div>
+
+                    <div class="arrow-right">
+                        <a href="#">
+                            <img src="image/right-arrow.svg" alt="Right Arrow" />
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- AI -SECTION-START -->
+    <div class="ai-section">
+        <div class="container">
+            <div class="ai-row">
+                <div class="ai-img-col">
+                    <div class="screenshot-pic">
+                        <img src="image/Screenshot-picture.png" alt="Screenshot-picture" />
+                    </div>
+                </div>
+                <div class="ai-text-contain">
+                    <h1>Powered by jAIne AI:</h1>
+                    <h3>
+                        Tax Planning Simplified & Supercharged
+                    </h3>
+                    <div class="disc-two">
+                        <ul>
+                            <li>
+                                Powered by Chatgpt 4, jAIne effortlessly navigates complex tax queries, becoming an
+                                essential partner inevery consultation.
+                            </li>
+                            <li>
+                                jAIne’s data analytics offers insights to identify the most effective tax strategies for
+                                your clients, so you never have to second guess again!
+                            </li>
+                            <li>
+                                Streamline your workflow jAIne provides instant, accurate tax advice, freeing you to
+                                invest more quality time with your clients.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="button-group">
+                            <a href="#" class="btn btn-primary">Start Free Trial</a>
+                            <a href="#" class="btn btn-secondary">get a demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Product-Section-START -->
+
+    <div class="product-section">
+        <div class="container">
+            <div class="product-row">
+                <div class="product-text-contain">
+                    <h4>
+                        Product Overview
+                    </h4>
+                    <h3>
+                        What Is TaxPlanIQ?
+                    </h3>
+                    <h5>
+                        Efficiency. Value. Success. </h5>
+                    <p>
+                        TaxPlanIQ is a tax advisory platform that delivers automated
+                        solutions for value pricing, live collaboration on tax plans, and end-to-end engagement
+                        management. </p>
+                    <p>
+                         From proposal creation, educational strategy selection, to implementation and ROI
+                        visualization, TaxPlanIQ allows tax advisors to manage it all from one place, with vetted vendor
+                        recommendations, discounts, and exclusive CPE.
+                    </p>
+                </div>
+                <div class="product-img-col">
+                    <div class="box-row">
+                        <div class="btn-shadow">
+                            <p>
+                                No of Plans
+                            </p>
+                            <h2>
+                                64
+                            </h2>
+                        </div>
+                        <div class="btn-shadow-2">
+                            <p>
+                                Published
+                            </p>
+                            <h2>
+                                72
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="box-row">
+                        <div class="btn-shadow">
+                            <p>
+                                Clients
+                            </p>
+                            <h2>
+                                119
+                            </h2>
+                        </div>
+                        <div class="btn-shadow-2">
+                            <p>
+                                Tax Savings 2023
+                            </p>
+                            <h2>
+                                $70,992
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="box-shadow-3">
+                        <h4>
+                            Total Published Tax Savings
+                        </h4>
+                        <div class="publish-tax-saving">
+                            <img src="image/publish-tax-saving.png" alt="PUBLISH TAX SAVING" />
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Testimonials-Section -->
+
+    <div class="testimonials-section">
+        <div class="container">
+            <div class="text-center testimonials-title">
+                <h4>
+                    Testimonials
+                </h4>
+                <h2>
+                    World Class Tax Advisors
+                    Love Using TaxPlanIQ
+                </h2>
+                <p>
+                    See what they’re saying....
+                </p>
+            </div>
+            <div class="box-title-row">
+            
+                <div class="testimonial-image-wrapper"
+                    onclick="toggleVideo('https://www.youtube.com/embed/wpfuf4UVY-U?si=_Pydaa5_2QBioVGL')">
+                    <div class="testimonial-image">
+                        <img src="image/Kevin-Smoot-men.png" alt="Kevin-Smoot-men" />
+                    </div>
+                    <div class="play-button">
+                        <img src="image/video-play-icon.svg" alt="video-play-icon" />
+                    </div>
+                </div>
+                <div class="author-paragrap">
+                    <p>
+                        “TaxPlanIQ is necessary. It’s necessary if you want to grow your business the right way and not
+                        just
+                        add clients but add higher value clients. The only way to do that is to show that you are
+                        valuable
+                        yourself. TaxPlanIQ Is going to allow you to portray that value and be able to break it down in
+                        plain sight how much you’re able to contribute to the clients.”
+                    </p>
+                    <div class="author">
+                        Kevin Smoot, EA, CTC, RIA
+                    </div>
+                    <div class="author-position">
+                        AccountAbility CPA- North Bethesda, MD
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal video-hidden" id="videoModal">
+                <div class="modal-content">
+                    <iframe width="100%" height="100%" src="" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+
+                    <button class="close-btn" onclick="closeVideo()">✕</button>
+                </div>
+            </div>
+
+            <div class="paragrap-row author-detail">
+                <div class="message-col">
+
+                    <p style="max-width:418px;">
+                        "We LOVE TaxPlanIQ. It has truly been a game changer for working with prospective clients. Being
+                        ableto show them the ROI analysis allows us to look SO professional and put together. We are so
+                        gratefulfor this tool and would highly recommend to any tax planning professional."
+                    </p>
+                    <div class="message-box">
+                        <div class="message-row">
+                            <div class="message-img">
+                                <img src="image/Tiffany-Johnson-women.png" alt="Tiffany-Johnson-women" />
+                            </div>
+                            <div>
+                                <h4>
+                                    Tiffany Johnson, CPA, CFP
+
+                                </h4>
+                                <h6>
+                                    The Onyx Group - Santa Monica, CA
+                                </h6>
+                            </div>
+                        </div>
+
+
+                        <div class="invited-coma-icon">
+                            <img src="image/invited-coma.svg" alt="invited-coma" />
+                        </div>
+
+                    </div>
+                </div>
+                <div class="message-col">
+                    <p>
+                        "TaxPlanIQ helps me close deals faster and gives me that little boost of confidence I may need.
+                        Then theeducational content in the resources is so helpful too. It’s the first place I go when I
+                        start researching astrategy.”
+                    </p>
+                    <div class="message-box">
+                        <div class="message-row">
+                            <div class="message-img">
+                                <img src="image/Natasha-Dornbush-women.png" alt="Natasha-Dornbush-women" />
+                            </div>
+                            <div>
+                                <h4>
+                                    Natasha Dornbush, CPA
+
+                                </h4>
+                                <h6>
+                                    Auxilium Accounting Services - Fredericksburg, VA
+                                </h6>
+                            </div>
+                        </div>
+
+
+                        <div class="invited-coma-icon">
+                            <img src="image/invited-coma.svg" alt="invited-coma" />
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="paragrap-row author-detail">
+                <div class="message-col">
+                    <p>
+                        To add to the earlier post about how great Tax Plan</p>
+                    <p>
+                        IQ is: I just closed a $8k tax plan plus $13k annual revenue maintenance plan and the meeting
+                        was under 15 min to present and close. The client stated the ROI was "obviously a slam dunk" and
+                        said let's start now. The Tax Plan IQ report was the closer. I barely had to speak the report
+                        closed the deal for me!
+                    </p>
+                    <div class="message-box">
+                        <div class="message-row">
+                            <div class="message-img">
+                                <img src="image/Kathleen-Smith-women.png" alt="Kathleen-Smith-women" />
+                            </div>
+                            <div>
+                                <h4>
+                                    Kathleen Smith, CPA
+                                </h4>
+                                <h6>
+                                    Tax Planning and & Accounting -
+                                    Poughkeepsie, New York
+                                </h6>
+                            </div>
+                        </div>
+
+
+                        <div class="invited-coma-icon">
+                            <img src="image/invited-coma.svg" alt="invited-coma" />
+                        </div>
+
+                    </div>
+                </div>
+                <div class="message-col">
+                    <p>
+                        For those of you wondering if TaxplanIQ is worth it, I just closed a client I have been trying
+                        to convert for years. Sold a plan with $10K onboarding and $9K/yr compliance. The difference,
+                        according to the client, is that TaxplanlQ clearly laid out the savings that I had been poorly
+                        communicating to them the past couple of years!</p>
+                        <p>
+                        Thanks Jackie Meyer and team for an amazing tool!!!
+                    </p>
+                    <div class="message-box">
+                        <div class="message-row">
+                            <div class="message-img">
+                                <img src="image/Rich-Inglis-men.png" alt="Rich-Inglis-men" />
+                            </div>
+                            <div>
+                                <h4>
+                                    Rich Inglis, EA
+
+                                </h4>
+                                <h6>
+                                    Paradigm Tax Consulting - Brentwood, CA
+                                </h6>
+                            </div>
+                        </div>
+
+
+                        <div class="invited-coma-icon">
+                            <img src="image/invited-coma.svg" alt="invited-coma" />
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <!-- Ready to Become a Tax Planning Wizard in Just Minutes? -->
+
+    <div class="tax-planing-section">
+        <div class="container">
+            <div class="tax-planing-row">
+                <h1>
+                    Ready to Become a Tax Planning Wizard in Just Minutes?
+                </h1>
+                <div class="button-group">
+                    <a href="#" class="btn btn-primary">Start Free Trial</a>
+
+                    <a href="#" class="btn btn-secondary-2">get a demo</a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- About-section-START -->
+
+    <div class="about-section">
+        <div class="container">
+            <div class="about-row">
+                <div class="about-img-col writer-title">
+                    <div class="img-center">
+                        <img src="image/jackey-mayer-women.png" alt="Jackie Meyer" />
+                    </div>
+                    <h5>
+                        <b>Jackie Meyer, CPA, CCA, </b>Founder of TaxPlanIQ and an award-winning CPA-firm Meyer
+                        Consulting
+                    </h5>
+                </div>
+                <div class="about-text-contain">
+                    <h4>
+                        About our Founder
+                    </h4>
+                    <h2>
+                        Tax planning software made for accountants by Accountants
+                    </h2>
+                    <p>
+                        <span>Jackie Meyer,</span> a consistent 40 under 40 honoree since 2018, is a dynamic force in
+                        the accounting
+                        world. As the former founder of award-winning Meyer Tax Consulting, she now spearheads
+                        innovative solutions, including TaxPlanIQ (AICPA 2023 Accelerator Cohort) and <span>Certified
+                            Concierge Accountant </span>mastermind. Jackie's transformative approach, rooted in The ROI
+                        Method of
+                        Tax Planning™, revolutionizes pricing models and addresses cultural challenges to combat burnout
+                        and turnover. She's a sought-after speaker, impacting thousands of accountants annually, and
+                        fosters change through her <span>"Accounting Firm Influencers"</span> Facebook group. With
+                        Jackie's
+                        leadership, the accounting profession embraces a promising future focused on well-being,
+                        prosperity, and stronger relationships.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Voted-section-STRAT -->
+
+    <div class="voted-section">
+        <div class="container">
+            <div class="text-center voted-title">
+                <h1>
+                    Voted AICPA Accelerator Program Participant 2023
+                    We're thrilled to have this honor.</h1>
+              <p>
+                    We are honored to share that TaxPlanIQ has earned a coveted spot among the 'Five startups with an
+                    eye to the future' showcased by Accelerator. This prestigious recognition highlights our commitment
+                    to pushing the boundaries of innovation in tax planning through automation, Al, and blockchain
+                    integration.
+                </p>
+                </div>
+                <div class="youtube-video">
+                    <iframe width="100%" height="100%"
+                        src="https://www.youtube.com/embed/K-HLXQ1-p4s?si=W6GddveJSlTYVhgj" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Blog-Section-START -->
+
+    <div class="blog-section">
+        <div class="container">
+            <div class="text-center">
+                <div class="blog-title">
+                  <h4>
+                    Education & Resources
+                  </h4> 
+                  <h1>
+                    Blog Posts and How-Tos:
+                  </h1> 
+                </div>
+               
+            </div>
+            <div class="blog-post-row">
+                <div class="blog-post">
+                    <div class="blog-post-img">
+                        <img src="image/technology-automation.png" alt="technology-automation" />
+                    </div>
+                    <div class="text-row blog-detail">
+                        <h5>
+                            Blog
+                        </h5>
+                        <h6>
+                            May 1, 2023
+                        </6>
+                    </div>
+                    <h2>
+                        Technology and Automation
+                    </h2>
+                    <p>
+                        As the tax industry continues to evolve and become increasingly complex, it is more important
+                        than ever for Tax Advisors to sta...
+                    </p>
+                    <div class="fevicon-row">
+                        <div class="fevicon">
+                            <img src="image/fevicon.jpg" alt="TaxPlanIQ" />
+                        </div>
+                        <h3>
+                            TaxPlanIQ Support team
+                        </h3>
+                    </div>
+
+                </div>
+                <div class="blog-post">
+                    <div class="blog-post-img">
+                        <img src="image/integration-textplanIq.png" alt="integration-textplanIq" />
+                    </div>
+                    <div class="text-row blog-detail">
+                       <h5>
+                        Blog
+                       </h5>
+                           
+                        <h6>
+                            April 12, 2023
+                        </h6>
+                    </div>
+                    <h2>
+                        TaxPlanIQ and Qount Integration
+                    </h2>
+                    <p>
+                        Utilizing the right software is necessary to boost your business. Software can help streamline
+                        tasks, enhance organization,...
+                    </p>
+                    <div class="fevicon-row">
+                        <div class="fevicon">
+                            <img src="image/fevicon.jpg" alt="TaxPlanIQ" />
+                        </div>
+                        <h3>
+                            TaxPlanIQ Support team
+                        </h3>
+                    </div>
+
+                </div>
+                <div class="blog-post">
+                    <div class="blog-post-img">
+                        <img src="image/digital-transformation.png" alt="digital-transformation" />
+                    </div>
+                    <div class="text-row blog-detail">
+                       <h5>
+                        Blog
+                       </h5>
+                       <h6>
+                        April 12, 2023
+                       </h6>
+                        </div>
+                       
+                  
+                    <h2>
+                        The AI Digital Transformation
+                    </h2>
+                    <p>
+                        As part of our upcoming Webinar on Artificial Intelligence and its impact on the accounting
+                        industry, we are taking a deeper look at the ... </p>
+                    <div class="fevicon-row">
+                        <div class="fevicon">
+                            <img src="image/fevicon.jpg" alt="TaxPlanIQ" />
+                        </div>
+                        <h3>
+                            TaxPlanIQ Support team
+                        </h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sign up for our newsletter -->
+
+    <div class="sign-up-section">
+        <div class="container">
+            <div class="text-center">
+                <div class="sign-up-title">
+                    Sign up for our newsletter
+                </div>
+                <div class="sign-up-subtitle">
+                    Be the first to know about releases and industry news and insights.
+                </div>
+
+                <form class="email-row" action="#" method="post">
+                    <input type="email" placeholder="Enter your email" class="input-email" name="email" required />
+                    <button type="submit" class="btn-subscribe">Subscribe</button>
+                </form>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER-SECTION-START -->
+
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="box-footer footer-description">
+                <h1>
+                    TaxPlanIQ is now your all-encompassing platform for Live Tax Planning & Advisory Solutions!
+                </h1>
+                <!-- Buttons -->
+                <div class="button-group">
+                    <a href="#" class="btn btn-primary">Start Free Trial</a>
+                    <a href="#" class="btn btn-secondary-2">Get a Demo</a>
+                </div>
+
+            </div>
+
+
+            <!-- Footer Top Section -->
+            <div class="footer-top">
+                <!-- Logo and Description -->
+                <div class="footer-logo-section  description-logo">
+                    <a href="/" class="footer-logo">
+                        <img src="image/TaxplanIQ-Footer-logo.svg" alt="TaxPlanIQ Logo">
+                    </a>
+                    <p>
+                        TaxPlanIQ is now your all-encompassing platform for Live Tax Planning & Advisory Solutions!
+                    </p>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <!-- Column 1 -->
+                    <div class="footer-column footer-heading">
+                        <h3>Product</h3>
+                        <a href="#" class="footer-link">TaxPlanIQ</a>
+                        <a href="#" class="footer-link">CCTA Masterclass</a>
+                        <a href="#" class="footer-link">Pricing</a>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="footer-column footer-heading">
+                        <h3>Company</h3>
+                        <a href="#" class="footer-link">About Us</a>
+                        <a href="#" class="footer-link">Pricing</a>
+                        <a href="#" class="footer-link">Events</a>
+                        <a href="#" class="footer-link">Referral Program</a>
+                        <a href="#" class="footer-link">Contact Us</a>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="footer-column footer-heading">
+                        <h3>Resources</h3>
+                        <a href="#" class="footer-link">Customer Stories</a>
+                        <a href="#" class="footer-link">Testimonials</a>
+                        <a href="#" class="footer-link">Contact Us</a>
+                        <a href="#" class="footer-link">Blog</a>
+                        <a href="#" class="footer-link">FAQs</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="footer-divider"></div>
+
+            <!-- Footer Bottom Section -->
+            <div class="footer-bottom">
+                <div class="footer-copyright-row">
+                    <p class="footer-copyright">
+                        Copyright © <span id="year"></span> TaxPlanIQ. All Rights Reserved.
+                    </p>
+                    <div class="footer-policies">
+                        <a href="#" class="footer-policy-link">Terms of Service</a>
+                        <a href="#" class="footer-policy-link">Privacy Policy</a>
+                        <a href="#" class="footer-policy-link">Cookies</a>
+                    </div>
+                </div>
+
+                <div class="footer-social-icons">
+                    <a href="https://facebook.com" target="_blank" class="social-icon">
+                        <img src="image/Facebook-logo.svg" alt="Facebook logo">
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon">
+                        <img src="image/Twitter-x-logo.svg" alt="Twitter logo">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon">
+                        <img src="image/Linkedin-logo.svg" alt="LinkedIn logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
