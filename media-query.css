@@ -150,12 +150,28 @@
     max-width: 100%;
   }
 
-  .paragrap-row,
-  .message-row {
+  .paragrap-row{
     flex-direction: column;
   }
+  .message-row {
+    flex-direction: column;
+    gap:0px;
+  }
 
-
+ .message-img{
+    margin: auto;
+  }
+  .message-img-detail{
+    text-align: center;
+  }
+  .invited-coma-icon img{
+    display: none;
+  }
+.message-box{
+  display:inline-block;
+  padding:12px;
+  border-radius:30px;
+}
   .tax-planing-row h2 {
     font-size: 40px;
   }
@@ -187,7 +203,7 @@
     width: 100%;
   }
 
-  .ai-text-contain h1 {
+  .ai-text-contain span {
     font-size: 32px;
   }
 
@@ -283,7 +299,7 @@
   }
 
   .testimonials-title h2,
-  .ai-text-contain h1 {
+  .ai-text-contain span {
     font-size: 28px;
   }
 
@@ -410,15 +426,21 @@
     line-height: 1.4;
   }
 
-  .button-group {
+  .button-group, .btn-secondary-2,.btn-secondary,.btn-primary{
     flex-direction: column;
+    gap:6px;
+    width:100%;
   }
 
+
   .about-text-contain p,
-  .about-text-contain span,
-  .voted-title p {
+  .about-text-contain span {
     font-size: 16px;
 
+  }
+  .voted-title p{
+    font-size:14px;
+    padding:22px 0;
   }
 
   .sign-up-title {
@@ -430,7 +452,7 @@
     font-size: 15px;
   }
 
-  .ai-text-contain h1 {
+  .ai-text-contain span {
     font-size: 22px;
     line-height: 1.3;
   }
