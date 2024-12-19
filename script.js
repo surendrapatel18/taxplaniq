@@ -49,27 +49,39 @@ function toggleVideo(videoUrl) {
     videoIframe.src = ''; 
   }
   
+  document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('.count-text-col');
 
-  function startCounting(element) {
-    const targetValue = +element.getAttribute("data-value");
-    const numberElement = element.querySelector(".count-number");
-  
-    if (element.getAttribute("data-counting") === "true") return; 
-    element.setAttribute("data-counting", "true");
-  
-    let count = 0;
-    const duration = 2000; 
-    const increment = Math.ceil(targetValue / (duration / 20)); 
-  
-    const interval = setInterval(() => {
-      count += increment;
-      if (count >= targetValue) {
-        numberElement.textContent = targetValue.toLocaleString();
-        clearInterval(interval);
-        element.setAttribute("data-counting", "false");
-      } else {
-        numberElement.textContent = count.toLocaleString();
-      }
-    }, 20); 
-  }
+    const animateCounter = (element) => {
+        const countNumber = element.querySelector('.count-number');
+        const targetValue = parseInt(element.getAttribute('data-value'), 10);
+        let currentValue = 0;
+        let increment = Math.ceil(targetValue / 100); // Adjust speed here
+
+
+        const updateCounter = () => {
+            currentValue += increment;
+            if (currentValue > targetValue) currentValue = targetValue;
+            countNumber.textContent = currentValue;
+
+            if (currentValue < targetValue) {
+                requestAnimationFrame(updateCounter);
+            }
+        };
+
+        updateCounter();
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+
+    counters.forEach((counter) => observer.observe(counter));
+});
+
   
